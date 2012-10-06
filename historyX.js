@@ -114,16 +114,16 @@ var historyX={
 	 {
       if(!history.pushState)
 	   {
-		this.Url=location.href;
-		this.interval=setInterval(function(){
-		  if(location.href!=this.Url)
+		historyX.Url=location.href;
+		historyX.interval=setInterval(function(){
+		  if(location.href!=historyX.Url)
 		   {
-			this.callBackAjax.call(null,this.loc.href.replace('#',""));
-			this.Url=location.href;
+			historyX.callBackAjax.call(null,this.loc.href.replace('#',""));
+			historyX.Url=location.href;
 		   }
 		},100);
 	   }
-	   else	this.callBackAjax.call(null,this.loc.href);	
+	   else	historyX.callBackAjax.call(null,this.loc.href);	
 	 },
    clickFunc:function(event)
 	{ 

@@ -10,7 +10,7 @@ var historyX={
 		this.callBackAjax=loadAjax;
 	    if(history.pushState)
 	     {
-		  onpopstate = function(event) { this.changeUrl(event.state);}
+		  onpopstate = function(event) { historyX.changeUrl(event.state);}
 		  this.reloadPage();
 		  this.changeOfReferences(className,loadAjax);
           this.firstStart=false; 
@@ -118,7 +118,7 @@ var historyX={
 		historyX.interval=setInterval(function(){
 		  if(location.href!=historyX.Url)
 		   {
-			historyX.callBackAjax.call(null,this.loc.href.replace('#',""));
+			historyX.callBackAjax.call(null,historyX.loc.href.replace('#',""));
 			historyX.Url=location.href;
 		   }
 		},100);

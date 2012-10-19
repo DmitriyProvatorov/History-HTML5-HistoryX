@@ -127,10 +127,14 @@ var historyX={
 	 },
    clickFunc:function(event)
 	{ 
+	 var button=false;
 	 clearInterval(historyX.interval);
 	 event = event||window.event;
 	 historyX.Url=location.href;
 	 var target=event.target||event.srcElement;
+	 if (event.which == null) button= (event.button < 2);
+	 else button= (event.which < 2);
+	 if(button){ 
      if(!target.getAttribute('data-ajax'))
 	 {
 	  if(target.parentNode.getAttribute('data-ajax')) target=target.parentNode;
@@ -147,6 +151,7 @@ var historyX={
 		 }
 	    else history.pushState(null, null, target.href);
 	    historyX.changeUrl();
-	  }
+	   }
+	 }
     } 
 };

@@ -68,7 +68,7 @@ var historyX={
 	  },
 	changeOfReferences: function(className,loadAjax,pathname) 
 	 {
-	  className= new RegExp('\\b'+className+'\\b');//className= new RegExp(className);
+	  className= new RegExp('\\b'+className+'\\b');
       var collection=document.getElementsByTagName('a');
 	  for(var i=collection.length;i--;)
 	   {
@@ -134,24 +134,25 @@ var historyX={
 	 var target=event.target||event.srcElement;
 	 if (event.which == null) button= (event.button < 2);
 	 else button= (event.which < 2);
-	 if(button){ 
-     	if(!target.getAttribute('data-ajax'))
-		 {
-	  		if(target.parentNode.getAttribute('data-ajax')) target=target.parentNode;
-      		else if(target.parentNode.parentNode.getAttribute('data-ajax')) target=target.parentNode.parentNode;
-	 	 }
-    	if( target.getAttribute('data-ajax'))
-	 	 { 
-      		 if (event.preventDefault) event.preventDefault();
-       		else event.returnValue=false; 
-	    	if(!history.pushState)
-			 {
-		 		 location.hash=target.name;
-		 		 historyX.callBackAjax.call(null,window.location.href.replace('#',""));
-		 	 }
-	    	else history.pushState(null, null, target.href);
-	    	historyX.changeUrl();
-	     }
+	 if(button)
+	  { 
+       if(!target.getAttribute('data-ajax'))
+	    {
+	  	 if(target.parentNode.getAttribute('data-ajax')) target=target.parentNode;
+      	 else if(target.parentNode.parentNode.getAttribute('data-ajax')) target=target.parentNode.parentNode;
+	    }
+       if( target.getAttribute('data-ajax'))
+	    { 
+      	 if (event.preventDefault) event.preventDefault();
+       	 else event.returnValue=false; 
+	     if(!history.pushState)
+		  {
+		   location.hash=target.name;
+		   historyX.callBackAjax.call(null,window.location.href.replace('#',""));
+		  }
+	     else history.pushState(null, null, target.href);
+	     historyX.changeUrl();
+	   }
 	  }
-    } 
+     } 
 };

@@ -29,15 +29,20 @@ History-HTML5-JavaScript
 			  Допускается использование/не использование 'http://', 'www.', 'закрывающий слеш' в корнях.
 			  
 			 Пример: 
+			 
 			    window.onload=function(){historyX.start('ajax',callback,"www.mysite/ru,mysite/en,http://www.mysite/ua,http://www.mysite/gm/");} 
 				Если используете jQuery:
+				
 			     $(document).ready(function() {historyX.start('ajax',callback,"www.mysite/ru,mysite/en,http://www.mysite/ua,http://www.mysite/gm/"); }); 
+				 
 			Формат ссылок на странице для успешной обработки:
-			 <a href="ваш адрес" class="....param1.....">Ваша информация</a>
+			 <a href="ваш адрес" class="[другие классы] param1 [другие классы]">Ваша информация</a>
+			 
 			Допускается создание одинарной и двойной вложенности в тег <a>:
-			  <a href="ваш адрес" class="....param1..."><img Ваша информация/></a>
-			  <a href="ваш адрес" class="...param1..."><h3> Ваша информация</h3></a>
-			  <a href="ваш адрес" class="...param1...."><span><i>Ваша информация</i></span></a>
+			
+			  <a href="ваш адрес" class="[другие классы] ajax [другие классы]"><img Ваша информация/></a>
+			  <a href="ваш адрес" class="[другие классы] ajax [другие классы]"><h3> Ваша информация</h3></a>
+			  <a href="ваш адрес" class="[другие классы] ajax [другие классы]"><span><i>Ваша информация</i></span></a>
 			  и т.д. в различных вариациях
 			 Внимание! В случае использования браузеров не поддерживающих HTML5 History, если в ссылке 
 			 вы будете использовать корень отличающийся от текущего корня в Uri браузера-ссылка не будет 
@@ -67,18 +72,23 @@ History-HTML5-JavaScript
 				 Do not forget to duplicate in the end of function processing the answer:
 				  historyX.start (param1, param2, [param3]);
 			    The param3-list of roots of a site divided by a comma. An example - "http://mySite,http://www.mySite2,mySite3,mySite4/".
-			  Use/not use ' http:// ', ' www. ', ' a closing slash ' in roots.
+			  Use/not use 'http://', 'www.', ' a closing slash ' in roots.
 			  		  
 			 Example: 
-			    window.onload=function () {historyX.start (' ajax ', callback, "www.mysite/ru,mysite/en,http://www.mysite/ua,http://www.mysite/gm/");} 
+			    window.onload=function () {historyX.start ('ajax', callback, "www.mysite/ru,mysite/en,http://www.mysite/ua,http://www.mysite/gm/");} 
 				If use jQuery:
-			     $ (document).ready (function () {historyX.start (' ajax ', callback, "www.mysite/ru,mysite/en,http://www.mysite/ua,http://www.mysite/gm/");}); 
+			     $ (document).ready (function () {historyX.start ('ajax', callback, "www.mysite/ru,mysite/en,http://www.mysite/ua,http://www.mysite/gm/");});
+				 
 			Format of references on page for successful processing:
-			 <a href = "your address" class = ".... param1....."> your information </a>
+			
+			 <a href = "your address" class = "[Other classes] param1 [Other classes]"> your information </a>
+			 
 			Creation of an unary and double enclosure in tag <a> is supposed:
-			  <a href = "your address" class = ".... param1..."> <img your information/> </a>
-			  <a href = "your address" class = "... param1..."> <h3> your information </h3> </a>
-			  <a href = "your address" class = "... param1...."> <span> <i> your information </i> </span> </a>
+			
+			  <a href = "your address" class = "[Other classes] ajax [Other classes]"> <img your information/> </a>
+			  <a href = "your address" class = "[Other classes] ajax [Other classes]"> <h3> your information </h3> </a>
+			  <a href = "your address" class = "[Other classes] ajax [Other classes]"> <span> <i> your information </i> </span> </a>
+			  
 			  Etc. in various variations
 			 Attention! In case of use of browsers not supporting HTML5 History, if in the reference 
 			 You will use a root different from a current root in Uri the browser-reference will not be 

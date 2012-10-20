@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Example</title>
+<script src="./historyX.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+</head>
+
+<body>
+<!-- The prepared references . Подготовленные ссылки. -->
+<a href="http://yourSite.com/folder/test1" class="ajax"> test1</a> 
+<a href="http://yourSite.com/folder/test" class="class1 ajax class2 class3"> test2</a>
+<script>
+window.onload=function(){
+	historyX.start('ajax',callback,"usluga-servis.com/folder"); // start HistoryX. Запуск HistoryX
+}
+function callback(url){ // Ajax request. Ajax запрос.
+  $.ajax({
+  type: "POST",
+  url: "theOutputAgentInquiry",
+  data: { url: url }
+  }).done(function( msg ) {
+   //........
+  historyX.start('ajax',callback,"usluga-servis.com/folder"); // duplicate in ajax answer processing. Дублирование в обработке ajax ответа
+ });
+}
+
+</script>
+</body>
+</html>

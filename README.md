@@ -41,7 +41,7 @@ History-HTML5-JavaScript
 			  и т.д. в различных вариациях
 			 Внимание! В случае использования браузеров не поддерживающих HTML5 History, если в ссылке 
 			 вы будете использовать корень отличающийся от текущего корня в Uri браузера-ссылка не будет 
-			 обработанна, и переход по ней будет осуществляться с перегрузкой страницы по понятным причинам.
+			 обработана, и переход по ней будет осуществляться с перегрузкой страницы по понятным причинам.
 			 Автозамена # на / и обратно при вводе адреса в зависимости от поддержки браузером HTML5 History.
 			 
 	Simplifies  work with HTML5 History, emulates its work in old browsers. Add in the site of only 1 lines and use together with Ajax without page reboot. Knowledge JavaScript necessary for work with it - a beginner
@@ -82,5 +82,5 @@ History-HTML5-JavaScript
 			  Etc. in various variations
 			 Attention! In case of use of browsers not supporting HTML5 History, if in the reference 
 			 You will use a root different from a current root in Uri the browser-reference will not be 
-			 обработанна, and transition on it will be carried out with a page overload for the clear reasons.
+			 It is processed, and transition on it will be carried out with a page overload for the clear reasons.
 			 Autoreplacement # on / and back at input of the address depending on support by browser HTML5 History.

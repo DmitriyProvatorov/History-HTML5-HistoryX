@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Example</title>
+<script src="./historyX.js"></script>
+</head>
+
+<body>
+<!-- The prepared references . Подготовленные ссылки. -->
+<a href="http://yourSite.com/folder/test1" class="ajax"> test1</a> 
+<a href="http://yourSite.com/folder/test" class="class1 ajax class2 class3"> test2</a>
+<script>
+window.onload=function(){
+	historyX.start('ajax',callback,"usluga-servis.com/folder"); // start HistoryX. Запуск HistoryX
+}
+function callback(url){ // Ajax request. Ajax запрос.
+  var req;
+  if (window.XMLHttpRequest) req = new XMLHttpRequest(); 
+  else
+   {
+    if (window.ActiveXObject) 
+     {
+      try 
+	   {
+        req = new ActiveXObject('Msxml2.XMLHTTP');
+       } 
+	  catch (e){}
+      try 
+	   {
+        req = new ActiveXObject('Microsoft.XMLHTTP');
+       }
+	  catch (e){}
+     }
+   }
+  if (req)
+   {
+    req.onreadystatechange = function() {if (req.readyState == 4 && req.status == 200)  {callbackAjax(req.responseText); }  };     
+   } 
+  req.open("POST", 'theOutputAgentInquiry', true);
+  req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded","Cache-Control: no-store, no-cache, must-revalidate");
+  req.send('url='+url);
+}
+function callbackAjax(responseText){ // Answer ajax processing. Обработка ajax ответа.
+	//.....
+	historyX.start('ajax',callback,"usluga-servis.com/folder"); // duplicate in ajax answer processing. Дублирование в обработке ajax ответа
+}
+</script>
+</body>
+</html>

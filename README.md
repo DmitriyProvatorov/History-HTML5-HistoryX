@@ -27,7 +27,7 @@ History-HTML5-JavaScript
 				  historyX.start(param1,param2,[param3]);
 			    param3-список корней сайта разделённых запятой. пример -"http://мойСайт,http://www.мойСайт2,мойСайт3,мойСайт4/".
 			     Допускается использование/не использование 'http://', 'www.', 'закрывающий слеш' в корнях.
-				  Если у Вашего Сайта есть корни, но вана CMS не настроена на автоматический редирект на определённый корень, то Вам не обязательно 
+				  Если у Вашего Сайта есть корни, но Ваша CMS не настроена на автоматический редирект на определённый корень, то Вам не обязательно 
 				 указывать список корней.
 			  
 			 Пример: 
@@ -75,7 +75,7 @@ History-HTML5-JavaScript
 				  historyX.start (param1, param2, [param3]);
 			    The param3-list of roots of a site divided by a comma. An example - "http://mySite,http://www.mySite2,mySite3,mySite4/".
 			     Use/not use 'http://', 'www.', ' a closing slash ' in roots.
-				 If your Site has roots, but вана CMS is not adjusted on an automatic redirect on a certain root to you it is not obligatory 
+				 If your Site has roots, but yours CMS is not adjusted on an automatic redirect on a certain root to you it is not obligatory 
 				 To specify the list of roots.
 			  		  
 			 Example: 

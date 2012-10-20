@@ -64,7 +64,7 @@ History-HTML5-JavaScript
 				   //Sending inquiry 
 				  }
 				 In a case if you in the answer receive a content for what at an insert in the document too it is necessary HISTORY functionality,
-				 Do not forget продублировать in the end function processing the answer:
+				 Do not forget to duplicate in the end of function processing the answer:
 				  historyX.start (param1, param2, [param3]);
 			    The param3-list of roots of a site divided by a comma. An example - "http://mySite,http://www.mySite2,mySite3,mySite4/".
 			  Use/not use ' http:// ', ' www is supposed. ', ' a closing slash ' in roots.

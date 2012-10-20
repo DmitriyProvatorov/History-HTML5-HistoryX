@@ -12,9 +12,7 @@
 <a href="http://yourSite.com/folder/test1" class="ajax"> test1</a> 
 <a href="http://yourSite.com/folder/test" class="class1 ajax class2 class3"> test2</a>
 <script>
-window.onload=function(){
-	historyX.start('ajax',callback,"usluga-servis.com/folder"); // start HistoryX. Запуск HistoryX
-}
+$(document).ready(function() { historyX.start('ajax',callback,"usluga-servis.com/folder");}); // start HistoryX. Запуск HistoryX
 function callback(url){ // Ajax request. Ajax запрос.
   $.ajax({
   type: "POST",
@@ -25,7 +23,6 @@ function callback(url){ // Ajax request. Ajax запрос.
   historyX.start('ajax',callback,"usluga-servis.com/folder"); // duplicate in ajax answer processing. Дублирование в обработке ajax ответа
  });
 }
-
 </script>
 </body>
 </html>

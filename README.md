@@ -26,7 +26,9 @@ History-HTML5-JavaScript
 				 не забудьте продублировать  в конце функции обрабатывающей ответ:
 				  historyX.start(param1,param2,[param3]);
 			    param3-список корней сайта разделённых запятой. пример -"http://мойСайт,http://www.мойСайт2,мойСайт3,мойСайт4/".
-			  Допускается использование/не использование 'http://', 'www.', 'закрывающий слеш' в корнях.
+			     Допускается использование/не использование 'http://', 'www.', 'закрывающий слеш' в корнях.
+				  Если у Вашего Сайта есть корни, но вана CMS не настроена на автоматический редирект на определённый корень, то Вам не обязательно 
+				 указывать список корней.
 			  
 			 Пример: 
 			 
@@ -72,7 +74,9 @@ History-HTML5-JavaScript
 				 Do not forget to duplicate in the end of function processing the answer:
 				  historyX.start (param1, param2, [param3]);
 			    The param3-list of roots of a site divided by a comma. An example - "http://mySite,http://www.mySite2,mySite3,mySite4/".
-			  Use/not use 'http://', 'www.', ' a closing slash ' in roots.
+			     Use/not use 'http://', 'www.', ' a closing slash ' in roots.
+				 If your Site has roots, but вана CMS is not adjusted on an automatic redirect on a certain root to you it is not obligatory 
+				 To specify the list of roots.
 			  		  
 			 Example: 
 			    window.onload=function () {historyX.start ('ajax', callback, "www.mysite/ru,mysite/en,http://www.mysite/ua,http://www.mysite/gm/");} 
@@ -88,8 +92,8 @@ History-HTML5-JavaScript
 			  <a href = "your address" class = "[Other classes] ajax [Other classes]"> <img your information/> </a>
 			  <a href = "your address" class = "[Other classes] ajax [Other classes]"> <h3> your information </h3> </a>
 			  <a href = "your address" class = "[Other classes] ajax [Other classes]"> <span> <i> your information </i> </span> </a>
+			  Etc. in various variations.
 			  
-			  Etc. in various variations
 			 Attention! In case of use of browsers not supporting HTML5 History, if in the reference 
 			 You will use a root different from a current root in Uri the browser-reference will not be 
 			 It is processed, and transition on it will be carried out with a page overload for the clear reasons.

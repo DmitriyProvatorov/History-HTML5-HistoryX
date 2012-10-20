@@ -67,7 +67,7 @@ History-HTML5-JavaScript
 				 Do not forget to duplicate in the end of function processing the answer:
 				  historyX.start (param1, param2, [param3]);
 			    The param3-list of roots of a site divided by a comma. An example - "http://mySite,http://www.mySite2,mySite3,mySite4/".
-			  Use/not use ' http:// ', ' www is supposed. ', ' a closing slash ' in roots.
+			  Use/not use ' http:// ', ' www. ', ' a closing slash ' in roots.
 			  		  
 			 Example: 
 			    window.onload=function () {historyX.start (' ajax ', callback, "www.mysite/ru,mysite/en,http://www.mysite/ru,http://www.mysite/gm/");} 
@@ -75,7 +75,7 @@ History-HTML5-JavaScript
 			     $ (document).ready (function () {historyX.start (' ajax ', callback, "www.mysite/ru,mysite/en,http://www.mysite/ru,http://www.mysite/gm/");}); 
 			Format of references on page for successful processing:
 			 <a href = "your address" class = ".... param1....."> your information </a>
-			Creation of an unary and double enclosure in тег <a> is supposed:
+			Creation of an unary and double enclosure in tag <a> is supposed:
 			  <a href = "your address" class = ".... param1..."> <img your information/> </a>
 			  <a href = "your address" class = "... param1..."> <h3> your information </h3> </a>
 			  <a href = "your address" class = "... param1...."> <span> <i> your information </i> </span> </a>

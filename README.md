@@ -29,9 +29,9 @@ History-HTML5-JavaScript
 			  Допускается использование/не использование 'http://', 'www.', 'закрывающий слеш' в корнях.
 			  
 			 Пример: 
-			    window.onload=function(){historyX.start('ajax',callback,"www.mysite/ru,mysite/en,http://www.mysite/ru,http://www.mysite/gm/");} 
+			    window.onload=function(){historyX.start('ajax',callback,"www.mysite/ru,mysite/en,http://www.mysite/ua,http://www.mysite/gm/");} 
 				Если используете jQuery:
-			     $(document).ready(function() {historyX.start('ajax',callback,"www.mysite/ru,mysite/en,http://www.mysite/ru,http://www.mysite/gm/"); }); 
+			     $(document).ready(function() {historyX.start('ajax',callback,"www.mysite/ru,mysite/en,http://www.mysite/ua,http://www.mysite/gm/"); }); 
 			Формат ссылок на странице для успешной обработки:
 			 <a href="ваш адрес" class="....param1.....">Ваша информация</a>
 			Допускается создание одинарной и двойной вложенности в тег <a>:
@@ -70,9 +70,9 @@ History-HTML5-JavaScript
 			  Use/not use ' http:// ', ' www. ', ' a closing slash ' in roots.
 			  		  
 			 Example: 
-			    window.onload=function () {historyX.start (' ajax ', callback, "www.mysite/ru,mysite/en,http://www.mysite/ru,http://www.mysite/gm/");} 
+			    window.onload=function () {historyX.start (' ajax ', callback, "www.mysite/ru,mysite/en,http://www.mysite/ua,http://www.mysite/gm/");} 
 				If use jQuery:
-			     $ (document).ready (function () {historyX.start (' ajax ', callback, "www.mysite/ru,mysite/en,http://www.mysite/ru,http://www.mysite/gm/");}); 
+			     $ (document).ready (function () {historyX.start (' ajax ', callback, "www.mysite/ru,mysite/en,http://www.mysite/ua,http://www.mysite/gm/");}); 
 			Format of references on page for successful processing:
 			 <a href = "your address" class = ".... param1....."> your information </a>
 			Creation of an unary and double enclosure in tag <a> is supposed:

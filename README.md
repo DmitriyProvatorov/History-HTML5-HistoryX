@@ -1,8 +1,9 @@
-History-HTML5-JavaScript
+History HTML5 JavaScript обеспечивает работу как в браузерах не поддерживающих API,так и в поддерживающих. Упрощает работу с API .
 =======================
 
 
-    Работает с HTML5 History, эмулирует работу в старых браузерах. Добавьте одну строку и используйте вместе с  Ajax без перезагрузки страницы. Знание JavaScript необязательно.
+    Работает с HTML5 History, эмулирует работу в старых браузерах. Добавьте одну строку и используйте вместе с  Ajax без перезагрузки страницы.
+	Знание JavaScript необязательно.
 			
 			
 			1. Добавьте файл historyX в вашу страницу:
@@ -51,7 +52,8 @@ History-HTML5-JavaScript
 			 обработана, и переход по ней будет осуществляться с перегрузкой страницы по понятным причинам.
 			 Автозамена # на / и обратно при вводе адреса в зависимости от поддержки браузером HTML5 History.
 			 
-	Simplifies  work with HTML5 History, emulates its work in old browsers. Add in the site of only 1 lines and use together with Ajax without page reboot. Knowledge JavaScript necessary for work with it - a beginner
+	Simplifies  work with HTML5 History, emulates its work in old browsers. Add in the site of only 1 lines and use together with Ajax without page reboot.
+	Knowledge JavaScript necessary for work with it - a beginner
 			
 			1. Add a file historyX in your page:
 			  <script src = "historyX.js"> </script>

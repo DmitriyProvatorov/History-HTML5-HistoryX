@@ -7,7 +7,7 @@ var historyX={
 	    if(this.firstStart){
             this.callBackAjax=loadAjax;
 	        if(history.pushState){
-                onpopstate = function(event) { historyX.changeUrl(event.state);}
+                var onpopstate = function(event) { historyX.changeUrl(event.state);}
 	            this.reloadPage();
 	            this.changeOfReferences(className,loadAjax);
                 this.firstStart=false;

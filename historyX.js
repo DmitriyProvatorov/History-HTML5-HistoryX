@@ -7,18 +7,18 @@ var historyX={
 	    if(this.firstStart){
             this.callBackAjax=loadAjax;
 	        if(history.pushState){
-				window.onpopstate = function(event) { historyX.changeUrl();}
-	            this.reloadPage();
-	            this.changeOfReferences(className,loadAjax);
-                this.firstStart=false;
-            }
-            else{
-                this.reloadPage(pathname);
-                this.changeOfReferences(className,loadAjax,pathname);
-                this.firstStart=false;
-                this.changeUrl(loadAjax);
-                this.checkURL(loadAjax);
-            }
+	        	window.onpopstate = function(event) { historyX.changeUrl();};
+	        	this.reloadPage();
+	        	this.changeOfReferences(className,loadAjax);
+	        	this.firstStart=false;
+            	}
+            	else{
+                	this.reloadPage(pathname);
+                	this.changeOfReferences(className,loadAjax,pathname);
+                	this.firstStart=false;
+                	this.changeUrl(loadAjax);
+                	this.checkURL(loadAjax);
+            	}
         }
         else this.changeOfReferences(className,loadAjax,pathname);
     },

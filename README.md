@@ -10,8 +10,10 @@ History HTML5 JavaScript обеспечивает работу, как в бра
 			  <script src="historyX.js"></script>
 			2. Запустите скрипт:
 			   window.onload=function(){historyX.start(param1,param2,[param3]);} 
-			   или, если используете jQuery
-			   $(document).ready(function() {historyX.start(param1,param2,[param3]); });
+			   если используете jQuery
+			   window.onload=function() {historyX.start(param1,param2,[param3]); };
+				($(document).ready не стоит использовать потому, что в разных браузерах очерёдность 
+				 событий для History разная)
 			   		   
 			   Где:
 			    param1 - имя класса для ссылок какие будут использоваться без перезагрузки страницы. Например- 'ajax'.
@@ -36,7 +38,7 @@ History HTML5 JavaScript обеспечивает работу, как в бра
 			    window.onload=function(){historyX.start('ajax',callback,"www.mysite/ru,mysite/en,http://www.mysite/ua,http://www.mysite/gm/");} 
 				Если используете jQuery:
 				
-			     $(document).ready(function() {historyX.start('ajax',callback,"www.mysite/ru,mysite/en,http://www.mysite/ua,http://www.mysite/gm/"); }); 
+			     window.onload=function() {historyX.start('ajax',callback,"www.mysite/ru,mysite/en,http://www.mysite/ua,http://www.mysite/gm/"); }; 
 				 
 			Формат ссылок на странице для успешной обработки:
 			 <a href="ваш адрес" class="[другие классы] param1 [другие классы]">Ваша информация</a>
@@ -59,9 +61,10 @@ History HTML5 JavaScript обеспечивает работу, как в бра
 			  <script src = "historyX.js"> </script>
 			2. Start a script:
 			   window.onload=function () {historyX.start (param1, param2, [param3]);} 
-			   Or, if use jQuery
-			   $ (document).ready (function () {historyX.start (param1, param2, [param3]);});
-			   		   		   		   
+			  if use jQuery
+			  window.onload=function () {historyX.start (param1, param2, [param3]);} 
+			   ($ (document).ready it is not necessary to use because in different browsers sequence 
+				 Events for History the different)		   		   		   
 			   Where:
 			    param1 - A name of a class for references what will be used without page reboot. For example - ' ajax '.
 				 At application of several classes to an element, the script finds the specified class in the list of classes. 
@@ -83,7 +86,7 @@ History HTML5 JavaScript обеспечивает работу, как в бра
 			 Example: 
 			    window.onload=function () {historyX.start ('ajax', callback, "www.mysite/ru,mysite/en,http://www.mysite/ua,http://www.mysite/gm/");} 
 				If use jQuery:
-			     $ (document).ready (function () {historyX.start ('ajax', callback, "www.mysite/ru,mysite/en,http://www.mysite/ua,http://www.mysite/gm/");});
+			     window.onload=function () {historyX.start ('ajax', callback, "www.mysite/ru,mysite/en,http://www.mysite/ua,http://www.mysite/gm/");} 
 				 
 			Format of references on page for successful processing:
 			

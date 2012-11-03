@@ -5,22 +5,22 @@ var historyX={
 	firstStart:true,
 	start:function(className,loadAjax,pathname){
 	    if(this.firstStart){
-            this.callBackAjax=loadAjax;
+            	this.callBackAjax=loadAjax;
 	        if(history.pushState){
-				setTimeout(function(){
+			setTimeout(function(){
 	        		window.onpopstate = function(event) { historyX.changeUrl();};
 	        		this.reloadPage();
 	        		this.changeOfReferences(className,loadAjax);
 	        		this.firstStart=false;
 				},500);
-            }
-            else{
-                this.reloadPage(pathname);
-                this.changeOfReferences(className,loadAjax,pathname);
-                this.firstStart=false;
-                this.changeUrl(loadAjax);
-                this.checkURL(loadAjax);
-            }
+           	 }
+            	else{
+                	this.reloadPage(pathname);
+                	this.changeOfReferences(className,loadAjax,pathname);
+                	this.firstStart=false;
+                	this.changeUrl(loadAjax);
+                	this.checkURL(loadAjax);
+           	 }
         }
         else this.changeOfReferences(className,loadAjax,pathname);
     },

@@ -9,9 +9,9 @@ var historyX={
 	        if(history.pushState){
 			setTimeout(function(){
 	        		window.onpopstate = function(event) { historyX.changeUrl();};
-	        		this.reloadPage();
-	        		this.changeOfReferences(className,loadAjax);
-	        		this.firstStart=false;
+	        		historyX.reloadPage();
+	        		historyX.changeOfReferences(className,loadAjax);
+	        		historyX.firstStart=false;
 				},500);
            	 }
             	else{

@@ -52,7 +52,7 @@ History HTML5 JavaScript обеспечивает работу, как в бра
 			 обработана, и переход по ней будет осуществляться с перегрузкой страницы по понятным причинам.
 			 Автозамена # на / и обратно при вводе адреса в зависимости от поддержки браузером HTML5 History.
 			 
-	Simplifies  work with [b]HTML5 History[/b], emulates its work in old browsers. Add in the site of only 1 lines and use together with Ajax without page reboot.
+	Simplifies  work with HTML5 History, emulates its work in old browsers. Add in the site of only 1 lines and use together with Ajax without page reboot.
 	Knowledge JavaScript necessary for work with it - a beginner
 			
 			1. Add a file historyX in your page:

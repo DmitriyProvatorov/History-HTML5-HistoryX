@@ -12,7 +12,7 @@
 <a href="http://yourSite.com/folder/test" class="class1 ajax class2 class3"> test2</a>
 <script>
 window.onload=function(){
-	historyX.start('ajax',callback,"usluga-servis.com/folder"); // start HistoryX. Запуск HistoryX
+	historyX.start('ajax',callback,"yourSite.com/folder"); // start HistoryX. Запуск HistoryX
 }
 function callback(url){ // Ajax request. Ajax запрос.
   var req;
@@ -43,7 +43,7 @@ function callback(url){ // Ajax request. Ajax запрос.
 }
 function callbackAjax(responseText){ // Answer ajax processing. Обработка ajax ответа.
 	//.....
-	historyX.start('ajax',callback,"usluga-servis.com/folder"); // duplicate in ajax answer processing. Дублирование в обработке ajax ответа
+	historyX.start('ajax',callback,"yourSite.com/folder"); // duplicate in ajax answer processing. Дублирование в обработке ajax ответа
 }
 </script>
 </body>

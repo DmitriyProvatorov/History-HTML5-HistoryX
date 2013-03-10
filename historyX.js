@@ -113,8 +113,8 @@ var historyX={
         else button= (event.which < 2);
         if(button){
             if(!target.getAttribute('data-ajax')){
-                if(target.parentNode.getAttribute('data-ajax')) target=target.parentNode;
-                else if(target.parentNode.parentNode.getAttribute('data-ajax')) target=target.parentNode.parentNode;
+                if(target.parentNode && target.parentNode.getAttribute('data-ajax')) target=target.parentNode;
+                else if(target.parentNode && target.parentNode.parentNode target.parentNode.parentNode.getAttribute('data-ajax')) target=target.parentNode.parentNode;
             }
             if( target.getAttribute('data-ajax')){
                 if (event.preventDefault) event.preventDefault();
